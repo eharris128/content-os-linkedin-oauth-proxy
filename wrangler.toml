@@ -1,9 +1,8 @@
-name = "oauth-proxy"
+name = "content-os"
 main = "src/index.js"
 compatibility_date = "2025-06-19"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
 # OAuth provider configuration
-# Secrets to be added via wrangler secret put
-REDIRECT_URL = "https://oauth-proxy.echarris.workers.dev/callback"
+REDIRECT_URL = "https://content-os.echarris.workers.dev/callback"
