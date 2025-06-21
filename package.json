@@ -1,5 +1,5 @@
 {
-  "name": "oauth-proxy",
+  "name": "content-os-linkedin-oauth-proxy",
   "version": "1.0.0",
   "description": "Minimal oauth proxy for LinkedIn login on Cloudflare worker",
   "main": "src/index.js",
