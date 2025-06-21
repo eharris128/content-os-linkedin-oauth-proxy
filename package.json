@@ -1,16 +1,21 @@
 {
-  "name": "contentos",
+  "name": "oauth-proxy",
   "version": "1.0.0",
-  "description": "",
-  "main": "linkedin-oauth.js",
+  "description": "Stateless OAuth proxy service for Cloudflare Workers",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "setup-secrets": "node setup-secrets.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
     "linkedin-api-client": "^0.3.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.20.3"
+  },
+  "engines": {
+    "node": ">=16"
   }
 }

@@ -25,7 +25,7 @@ async function createPost() {
     const postsCreateResponse = await restliClient.create({
       resourcePath: POSTS_RESOURCE,
       entity: {
-        author: `urn:li:person:U9YPPJ07vq`,
+        author: `urn:li:person:${PERSON_URN}`,
         lifecycleState: 'PUBLISHED',
         visibility: 'PUBLIC',
         commentary: 'Hello LinkedIn! This is a test post created via API.',
