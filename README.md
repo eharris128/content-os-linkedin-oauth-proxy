@@ -2,21 +2,18 @@
 
 A secure, stateless service for obtaining LinkedIn access tokens without requiring users to set up their own OAuth applications. Built on Cloudflare Workers for maximum reliability and security.
 
-## 🔐 For Obsidian Plugin Reviewers
+## For Obsidian Plugin Reviewers
 
 This service is designed to help users obtain LinkedIn access tokens for API integration. **Important security notes:**
 
 - **No Token Storage**: We never store, log, or persist user access tokens anywhere
 - **Stateless Design**: No databases, no session storage, no token caching
-- **Direct Token Delivery**: Tokens are shown directly to users and immediately discarded
 - **Open Source**: All code is publicly available for security review
-- **Zero Data Collection**: No user data, analytics, or tracking
 
 ## Features
 
-- **Privacy-First**: Zero token storage or persistence
 - **User-Friendly**: Simple interface for non-technical users
-- **Secure by Design**: Uses official LinkedIn API client with CSRF protection
+- **Secure by Design**: Uses official LinkedIn API client
 - **No Setup Required**: Users don't need to create LinkedIn apps
 - **Cloudflare Workers**: Serverless, globally distributed, and highly available
 
@@ -104,7 +101,6 @@ src/
 └── utils/
     └── html.js       # HTML template utilities
 
-signin_with_linkedin-buttons/  # Official LinkedIn button assets
 wrangler.toml                  # Cloudflare Workers configuration
 ```
 
