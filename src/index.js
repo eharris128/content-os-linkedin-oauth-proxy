@@ -309,7 +309,7 @@ function tokenResponse(tokenData) {
 </head>
 <body>
   <div class="container">
-    <div class="success">✓ Authorization Successful!</div>
+    <div class="success">Authorization Successful!</div>
     <h2>Your Access Token:</h2>
     
     <button class="button" onclick="copyToken()">Copy Access Token</button>
@@ -317,13 +317,7 @@ function tokenResponse(tokenData) {
     <div class="info">
       <strong>Important:</strong> Save this token securely. We do not store it. The token will expire in 60 days.
     </div>
-    
-    <h3>Using your token:</h3>
-    <p>Include the access token in your API requests:</p>
-    <div class="token-box">
-Authorization: Bearer ${tokenData.access_token}
-    </div>
-    
+
     <p><a href="/">Start Over</a></p>
   </div>
   
