@@ -293,6 +293,8 @@ function tokenResponse(tokenData) {
     
     <button class="button" onclick="copyToken()">Copy Access Token</button>
     
+    <div id="tokenData" style="display: none;">${JSON.stringify(tokenData)}</div>
+    
     <div class="info">
       <strong>Important:</strong> Save this token securely. We do not store it. The token will expire in 60 days.
     </div>
